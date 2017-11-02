@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+</head>
+<body>
+<ul class="list">
+    <li class="team">未使用</li>
+    <li>已使用</li>
+    <li>已过期</li>
+</ul>
+<div class="juch">
+    <div class="opction1">
+        <ul>
+
+            <li class="juc">
+                我就是我使眼色不一样的
+            </li>
+            <p></p>
+            <li class="juc"></li>
+            <p></p>
+            <li class="juc"></li>
+            <p></p>
+        </ul>
+    </div>
+    <div class="opction2">
+        one
+    </div>
+    <div class="opction3">
+        two
+    </div>
+
+</div>
+<script src="js/zepto.js"></script>
+<script>
+   $(".list li").on("click",function(){
+       var ind = $(this).index();
+       $(this).addClass("team").siblings().removeClass("team")
+       $(".juch div").eq(ind).show().siblings().hide();
+   })
+</script>
+</body>
+</body>
+</html>
